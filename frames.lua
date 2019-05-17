@@ -120,12 +120,12 @@ local function iconOnShow(self)			--
 	if P.showCooldown == true and self.expirationTime > 0 then
 		self.cdbg:Show()
 		self.cd:Show()
+	end
 
-		if P.showCooldownTexture == true then
+	if P.showCooldownTexture == true and self.expirationTime > 0 then
 			self.cdtexture:SetCooldown(self.startTime, self.duration);
 			self.cdtexture:Show()
 		end
-	end
 
 	local iconSize = P.iconSize
 	local cooldownSize = P.cooldownSize
