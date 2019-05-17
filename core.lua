@@ -236,7 +236,7 @@ for i=1, table_getn(defaultSpells1) do
 	if spellName then
 		core.defaultSettings.profile.spellOpts[spellName] = {
 			iconSize = 40, --max size
-			cooldownSize = 0,--almost max.
+			cooldownSize = 18,--almost max.
 			show = 1, --always show spell
 			stackSize = 18,
 --~ 			when = date("%c"),--when isn't really used for anything. =/
@@ -251,7 +251,7 @@ for i=1, table_getn(defaultSpells2) do
 	if spellName then
 		core.defaultSettings.profile.spellOpts[spellName] = {
 			iconSize = 40, --mid size
-			cooldownSize = 0,
+			cooldownSize = 12,
 			show = 1, --always show spell
 			stackSize = 14,
 --~ 			when = date("%c"),--when isn't really used for anything. =/
